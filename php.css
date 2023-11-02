@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+    
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    /* overflow: unset; */
+    /* overflow-x: hidden; */
+}
+
+header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 12, 22, 0.7),rgba(2, 28, 35, 0.7)),url(images/th.jpeg);
+    /* background-color: #0D3159; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+    /* opacity: 2; */
+    
+}  
+nav{
+    display: flex;
+    padding: 0.8% 4%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020A43;
+}
+.nav_image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+.nav_image h3::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #EF5050;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav_image h3:hover::after{
+    width: 100%;
+}
+
+
+nav img
+{
+    width: 45px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size:  16px;
+    font-weight: 600;
+    
+}
+i{
+    color: white;
+    font-size: 25px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+aside{
+    width: 18vw;
+    /* height: calc(100vh - 50px); */
+    /* height: 100vw; */
+    height: 5200px;
+    /* padding-left: 20px; */
+    padding-top: 15px;
+    background-color: gainsboro;
+    overflow: hidden;
+    margin-right: 10px;
+}
+li{
+    list-style: none;
+    /* color: #020A43; */
+    cursor: pointer;  
+}
+aside ul li{
+    text-decoration: none;
+    width: 100%;
+    /* color: #020A43; */
+    color: #020A43;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 0;  
+    padding-left: 50px;  
+    /* padding-right: 0; */
+
+}
+.intro{
+    background-color: #020A43;
+    color: white;
+}
+aside ul li:hover{
+    color: white;
+    background-color: #020A43;
+    transition: all 0.5s;
+}
+
+
+
+.contento{
+    width: calc(100vw - 18vw);
+    height: 100vh;
+    position: absolute;
+    top: 90px;
+    left: 280px;
+    padding-left: 10px;
+    /* overflow:; */
+}
+/* .hide{
+    display: none;
+} */
+@media (max-width: 600px) {
+    /* .hide{
+        display: block;
+         position: absolute;
+        background: crimson;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -400px;
+        text-align: left;
+        z-index: 2; 
+    }*/
+    /* .show{
+        display: none;
+    }  */
+    aside{
+        display: none;
+    }
+    .contento{
+        /* width: 100vw; */
+        left: 0px;
+    }
+    .nav_image{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    nav img
+    {
+        width: 40px;
+    }
+    .text-box
+    {
+        width: 95%;
+        /* color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center; */
+    }
+
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 16px;
+    }
+    .nav-links ul li
+    {
+       display: block; 
+
+    }
+    .nav-links{
+        position: absolute;
+        background: crimson;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        word-spacing: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .ra{
+        display: block;
+    }
+}
